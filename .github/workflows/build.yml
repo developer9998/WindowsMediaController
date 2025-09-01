@@ -23,10 +23,10 @@ jobs:
         dotnet-version: | 
           3.0.x
           3.1.x
+          5.0.x
           6.0.x
           7.0.x
           8.0.x
-          9.0.x
     - name: .NET Restore
       run: dotnet restore
 
@@ -52,4 +52,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Sample.UI
-        path: .\Sample.UI\bin\Debug\net8.0-windows10.0.26100.0\
+        path: .\Sample.UI\bin\Debug\net6.0-windows10.0.22000.0\
